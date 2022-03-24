@@ -1,0 +1,81 @@
+/* navbar */
+
+
+/* hero background image */
+.bgimage {
+    height:100vh;
+    background: url('https://media.istockphoto.com/photos/cyber-security-web-development-and-work-in-it-concept-picture-id1289411982?b=1&k=20&m=1289411982&s=170667a&w=0&h=0R3OXR4L6LOGphYA3sul4bWQwpGj_DSl05ENiP2kRZg=');
+    background-size:cover;
+    position:relative;
+}
+
+
+/* text css above hero image*/
+.hero_title {
+    font-size: 4.5rem;
+}
+.hero_desc {
+    font-size: 2rem;
+}
+.hero-text {
+    background-color:#8080805b;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+}
+.imageAboutPage {
+    width: 100%;
+}
+
+/* services section css */
+.servicesText.card {
+    height: 280px;
+    cursor: pointer;
+  }
+.servicesIcon {
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+}
+.card-title {
+    text-align: center;
+}
+.card:hover .servicesIcon {
+    color: #008000;
+}
+.servicesText:hover {
+    border: 1px solid #008000;
+}
+
+/* social media icons styling */
+.social-icons {
+    font-size: 30px;
+}
+
+.social-icons a i{
+    color: rgba(0, 0, 0, 0.753);
+    padding: 10px 10px;
+}
+
+.social-icons a i:hover{
+    color: rgba(0, 4, 255, 0.753);
+    padding: 10px 10px;
+    font-size: 35px;
+}
+
+
+/* footer styling */
+#footer {
+    padding: 10px;
+    background-color: #808080;
+    text-align: center;
+}
+
+#contact {
+    padding-bottom: 4rem;
+}
+
+
