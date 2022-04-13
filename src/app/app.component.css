@@ -32,8 +32,9 @@
 
 /* services section css */
 .servicesText.card {
-    height: 280px;
+   
     cursor: pointer;
+    background-color: aquamarine;
   }
 .servicesIcon {
     font-size: 36px;
@@ -44,10 +45,10 @@
     text-align: center;
 }
 .card:hover .servicesIcon {
-    color: #008000;
+    color: #fa8b04;
 }
 .servicesText:hover {
-    border: 1px solid #008000;
+    border: 1px solid #fa8b04;
 }
 
 /* social media icons styling */
