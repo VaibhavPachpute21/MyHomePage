@@ -231,7 +231,9 @@ font-weight: 500;
   }
   
 /* MyDetails CSS */
-
+#about h1{
+  font-family: 'Libre Bodoni', serif;
+}
 .myDetails{
 
     overflow: hidden;
@@ -242,7 +244,27 @@ font-weight: 500;
 
 }
 
+/* skills */
+.scontainer {
+  height: 20px;
+  width: 100%;background-color: #ddd;
+}
+  
 
+.skills {
+  height: 20px;
+  text-align: right;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  color: white;
+}
+
+.html {width: 90%; background-color: #04AA6D;}
+.javasscript {width: 90%; background-color: #04AA6D;}
+.angular {width: 60%; background-color: #04AA6D;}
+.flutter {width: 80%; background-color: #04AA6D;}
 
 /* services section css */
 
