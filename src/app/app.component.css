@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@1,600&display=swap');
 
-@media only screen and (min-width:1200px){
-	.nav-item > .nav-link{padding: 5px 20px !important;
-		display: block !important;}
-    .homeBanner img{
-        height: 350px;
-    }
+@media only screen and (min-width:600px){
+
+    .myDetails{
+      height: min-content;
+      background-color: white;
+      border-radius: 30px;
+      margin-left: 10px;
+      margin-right: 10px;
+  
+  }
+
 }
 
 
@@ -16,6 +21,8 @@
         height: 350px;
     }
 }
+
+
 
 @media only screen and (max-width:992px){
 
@@ -37,7 +44,6 @@
 
     .myDetails{
         height: min-content;
-        margin-top: -70px;
         background-color: white;
         border-radius: 30px;
         margin-left: 10px;
@@ -230,11 +236,8 @@ font-weight: 500;
 
     overflow: hidden;
     background-color: #FE4066;
-    margin-top: -70px;
     background-color: white;
     border-radius: 10px;
-    margin-left: 50px;
-    margin-right: 50px;
     padding: 20px 20px;
 
 }
@@ -252,11 +255,6 @@ font-weight: 500;
   text-align: justify;
 }
 
-.servicesText.card {
-   
-    cursor: pointer;
-    background-color: whitesmoke;
-  }
 .servicesIcon {
     font-size: 36px;
     text-align: center;
@@ -275,6 +273,19 @@ font-weight: 500;
 /* social media icons styling */
 .social-icons {
     font-size: 30px;
+}
+
+.card-body{
+  background-color: aquamarine;
+  
+}
+
+.card-body h4,p{
+  font-family: 'Roboto Mono', monospace;
+}
+
+.card-body:hover{
+  background-color: whitesmoke;
 }
 
 .social-icons a i{
