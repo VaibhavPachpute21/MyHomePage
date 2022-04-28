@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@1,600&display=swap');
+
+@media only screen and (min-width:600px){
+  .homeBanner h1{
+    text-align: left;
+    margin-left: 0%;
+  }
+    .myDetails{
+      height: min-content;
+      background-color: white;
+      border-radius: 30px;
+      margin-left: 10px;
+      margin-right: 10px;
+  
+  }
+
+}
+
+@media only screen and (max-width:992px){
+
+    .homeBanner{
+        margin-top: 15%;
+    }
+
+    .homeBanner img{
+        width: 100%;
+    }
+
+    .myDetails{
+        height: min-content;
+        background-color: white;
+        border-radius: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+    
+    }
+
+
+
+}
+
+    
+  /* Intro slider css */
+#home{
+  height: 100vh;
+}
+  .homeBanner{
+      padding-top: 10%;
+      align-items: center;
+  }
+  .homeBanner h1{
+    text-align: left;
+    margin-left: 100px;
+  }
+
+  .homeBanner img{
+    align-items: center;
+    height: 100%;
+      border-radius: 10px 100px;
+  }
+
+  .homeBanner h3{
+      color: white;
+  }
+
+  .page-bg   {
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+  }
+  
+   .page-bg {
+    background: #1e1e1e;
+    background-blend-mode: screen;
+    background-size: cover;
+    /* filter: grayscale(100%);*/ 
+    z-index: -1;
+  } 
+  
+  
+/* MyDetails CSS */
+#about h1{
+  font-family: 'Libre Bodoni', serif;
+}
+.myDetails{
+
+    overflow: hidden;
+    background-color: #FE4066;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px 20px;
+
+}
+
+/* skills */
+.scontainer {
+  height: 20px;
+  width: 100%;background-color: #ddd;
+}
+  
+
+.skills {
+  height: 20px;
+  text-align: right;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  color: white;
+}
+
+.html {width: 90%; background-color: #04AA6D;}
+.javasscript {width: 90%; background-color: #04AA6D;}
+.angular {width: 60%; background-color: #04AA6D;}
+.flutter {width: 80%; background-color: #04AA6D;}
+
+/* services section css */
+
+#services h1{
+  font-family: 'Libre Bodoni', serif;
+}
+
+#services p{
+  font-family: 'Roboto Mono', monospace;
+  text-align: justify;
+}
+
+.servicesIcon {
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+}
+.card-title {
+    text-align: center;
+}
+.card:hover .servicesIcon {
+    color: #fa8b04;
+}
+.servicesText:hover {
+    border: 1px solid #fa8b04;
+}
+
+/* social media icons styling */
+.social-icons {
+    font-size: 30px;
+}
+
+.card-body{
+  background-color: aquamarine;
+  
+}
+
+.card-body h4,p{
+  font-family: 'Roboto Mono', monospace;
+}
+
+.card-body:hover{
+  background-color: whitesmoke;
+}
+
+.social-icons a i{
+    color: rgba(0, 0, 0, 0.753);
+    padding: 10px 10px;
+}
+
+.social-icons a i:hover{
+    color: rgba(0, 4, 255, 0.753);
+    padding: 10px 10px;
+    font-size: 35px;
+}
+
+
+/* footer styling */
+#footer {
+    padding: 10px;
+    background-color: #808080;
+    text-align: center;
+}
+
+#contact {
+    padding-bottom: 4rem;
+}
+
+.text{
+  color:white;
+  font-size: 300px;
+}
+.blink {
+  border-right-style: solid;
+  animation: 1s blink infinity;
+}
+@keyframes blink {
+  to {
+    opacity: 0;
+  }
+}
+
+.banerTXT  {
+  text-align: left;
+  margin-top: 5px;
+  padding-bottom: 5px;
+  color: white; 
+  font-size: 30px;
+  height: 90px;
+  font-family: 'Roboto Mono', monospace;
+}
+
+
+.word {
+  text-align: left;
+  margin-top: 5px;
+  padding-bottom: 5px;
+  color: white; 
+  font-size: 30px;
+  height: 90px;
+  font-family: 'Roboto Mono', monospace;
+}
