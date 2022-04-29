@@ -1,5 +1,113 @@
 /*#1e3d59, #f5f0e1, #ff6e40, #ffc13b*/
-section{
+
+section {
+    background-color: #1e3d59;
     height: 100vh;
+    color: white;
+
 }
 
+/* home */
+.home {
+    padding: 10rem 0rem 0rem 0rem;
+    align-items: center;
+}
+
+.home img {
+    height: 100%;
+    width: 100%;
+}
+
+.home button {
+    border-radius: 100px;
+    color: white;
+    border-color: white;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.home button:hover {
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 100px;
+    background-color: #ff6e40;
+    border-color: #ff6e40;
+}
+
+.home h1 {
+    font-size: 5rem;
+}
+
+.home h3 {
+    font-size: 3rem;
+}
+
+.home p {
+    font-size: 2rem;
+}
+
+
+/* About */
+.about {
+    padding: 3rem 0rem 0rem 0rem;
+    align-items: center;
+}
+
+.about h1 {
+    font-size: 5rem;
+}
+
+.about h3 {
+    font-size: 3rem;
+}
+
+.about p {
+    font-size: 2rem;
+    text-align: justify;
+}
+
+
+
+/* Mobile View */
+@media screen and (max-width:600px) {
+
+    /* home */
+    .home {
+        padding: 5rem 0rem 0rem 0rem;
+        align-items: center;
+    }
+
+    .home h1 {
+        padding-top: 15px;
+        font-size: 3rem;
+    }
+
+    .home h3 {
+        font-size: 2rem;
+    }
+
+    .home p {
+        font-size: 1.1rem;
+        text-align: justify;
+    }
+
+    /* About */
+    .about {
+        padding: 1rem 0rem 0rem 0rem;
+        align-items: center;
+    }
+
+    .about h1 {
+        font-size: 3rem;
+    }
+
+    .about h3 {
+        font-size: 2rem;
+    }
+
+    .about p {
+        font-size: 1.1rem;
+        text-align: justify;
+    }
+
+
+}
