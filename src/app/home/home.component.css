@@ -62,7 +62,7 @@ p{
 
 /* About */
 .about {
-    padding: 3rem 0rem 0rem 0rem;
+    padding: 4rem 0rem 0rem 0rem;
     align-items: center;
 }
 
@@ -81,7 +81,7 @@ p{
 
 /* projects */
 .projects{
-    padding-top: 2rem;
+    padding: 4rem 0rem 0rem 0rem;
     height: 100%;
 }
 .card{
@@ -164,8 +164,9 @@ p{
 
     /* About */
     .about {
-        padding: 1rem 0rem 0rem 0rem;
+        padding: 3.1rem 0rem 0rem 0rem;
         align-items: center;
+        height: 100%;
     }
 
     .about h1 {
@@ -183,7 +184,7 @@ p{
 
     /* projects */
     .projects{
-        padding-top: 2rem;
+        padding: 4rem 0rem 0rem 0rem;
         height: 100%;
     }
     .projects h1{
