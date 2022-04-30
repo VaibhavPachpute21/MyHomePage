@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -74,9 +76,16 @@ export class HomeComponent implements OnInit {
       description: "velopment can range from developing a simple single static page of plain text to complex web applications."
     }
   ]
-  constructor() { }
+  constructor() { 
+    function heelo(){
+      console.log("hi");
+    };
+  }
 
-  ngOnInit(): void {
+
+  ngOnInit() {
+
+
   }
 
 }

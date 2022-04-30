@@ -18,7 +18,7 @@
   <!--fontawesome-->
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
-    </style>
+  </style>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
@@ -45,52 +45,83 @@
 
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
-  <script>var words = ["Student.","Freelancer.", "Web-Developer.", "Flutter Developer."],
-    part,
-    i = 0,
-    offset = 0,
-    len = words.length,
-    forwards = true,
-    skip_count = 0,
-    skip_delay = 15,
-    speed = 100;
-  
-  var wordflick = function () {
-    setInterval(function () {
-      if (forwards) {
-        if (offset >= words[i].length) {
-          ++skip_count;
-          if (skip_count == skip_delay) {
-            forwards = false;
-            skip_count = 0;
-          }
-        }
-      } else {
-        if (offset == 0) {
-          forwards = true;
-          i++;
-          offset = 0;
-          if (i >= len) {
-            i = 0;
-          }
-        }
-      }
-      part = words[i].substr(0, offset);
-      if (skip_count == 0) {
+
+	<script src="https://smtpjs.com/v3/smtp.js">
+	</script>
+
+
+
+<script>
+  var btn = document.getElementById('sbtbtn');
+  var name = document.getElementById('name');
+  var email = document.getElementById('email').value;
+  var subject = document.getElementById('subject');
+  var message = document.getElementById('message');
+  btn.addEventListener('click', function (e) {
+    e.preventDefault();
+    Email.send({
+      Host: "smtp.gmail.com",
+      Username: "pachputevaibhav0@gmail.com",
+      Password: "zfgudvygdivtpsfq",
+      To: 'vpachpute22@gmail.com',
+      From: document.getElementById('email').value,
+      Subject: document.getElementById('subject').value,
+      Body:"Name:"+document.getElementById('name').value + "<br/>"+ document.getElementById('message').value+"\n"
+    }).then(
+      message => alert(message)
+    );
+  })
+</script>
+
+
+
+
+  <script>var words = ["Student.", "Freelancer.", "Web-Developer.", "Flutter Developer."],
+      part,
+      i = 0,
+      offset = 0,
+      len = words.length,
+      forwards = true,
+      skip_count = 0,
+      skip_delay = 15,
+      speed = 100;
+
+    var wordflick = function () {
+      setInterval(function () {
         if (forwards) {
-          offset++;
+          if (offset >= words[i].length) {
+            ++skip_count;
+            if (skip_count == skip_delay) {
+              forwards = false;
+              skip_count = 0;
+            }
+          }
         } else {
-          offset--;
+          if (offset == 0) {
+            forwards = true;
+            i++;
+            offset = 0;
+            if (i >= len) {
+              i = 0;
+            }
+          }
         }
-      }
-      $(".word").text(part);
-    }, speed);
-  };
-  
-  $(document).ready(function () {
-    wordflick();
-  });
-    
+        part = words[i].substr(0, offset);
+        if (skip_count == 0) {
+          if (forwards) {
+            offset++;
+          } else {
+            offset--;
+          }
+        }
+        $(".word").text(part);
+      }, speed);
+    };
+
+    $(document).ready(function () {
+      wordflick();
+    });
+
   </script>
 
   <script type="text/javascript">
@@ -106,10 +137,10 @@
     });
   </script>
 
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 </body>
 

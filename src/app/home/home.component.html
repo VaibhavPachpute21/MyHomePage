@@ -148,23 +148,23 @@
             </div>
             <div class="col-md-6 oder-1">
                 <p>If you want to get in touch with me just drop a message!</p>
-                <form action="mailto:vpachpute22@gmail.com" method="POST" enctype="multipart/form-data"
-                    name="EmailTestForm">
+                <form name="form" method="post">
                     <div class="row">
                         <div class="mb-3 col-md-6">
-                            <input type="text" class="form-control" placeholder="Your Name">
+                            <input type="text" class="form-control name" id="name" placeholder="Your Name">
                         </div>
                         <div class="mb-3 col-md-6">
-                            <input type="email" class="form-control" placeholder="Your Email">
+                            <input type="email" class="form-control email" id="email" placeholder="Your Email">
                         </div>
                     </div>
                     <div class="mb-3">
-                        <input type="text" class="form-control" placeholder="Subject">
+                        <input type="text" class="form-control" id="subject" placeholder="Subject">
                     </div>
                     <div class="mb-3">
-                        <textarea type="text" class="form-control" placeholder="Message here..."></textarea>
+                        <textarea type="text" class="form-control msg" id="message" rows="5"
+                            placeholder="Message here..."></textarea>
                     </div>
-                    <button type="submit" class="btn btn-outline-primary">Submit</button>
+                    <button type="submit" id="sbtbtn" class="btn btn-outline-primary" onClick="">Submit</button>
                 </form>
             </div>
         </div>
