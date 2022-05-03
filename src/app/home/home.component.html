@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4 order-sm-first">
-                <img alt="Bootstrap Image Preview" src="../../assets/hero.jpg" class="img-thumbnail" />
+                <img alt="heroImg" src="https://avatars.githubusercontent.com/u/77538181" class="img-thumbnail" />
             </div>
             <div class="col-md-8">
                 <h1>Hi I'm <strong style="color: #ff6e40; font-family: 'Libre Bodoni', serif;">Vaibhav
@@ -134,7 +134,7 @@
 
                 <span><i class="bi bi-geo-alt" style="size: 90px;"></i> Location: Bhiwandi,Thane,Maharashtra</span><br>
                 <span><i class="bi bi-envelope-fill"></i> Email: vpachpute22@gmail.com</span><br>
-                <span><i class="bi bi-telephone"></i> +91 9359979571</span><br>
+                <!-- <span><i class="bi bi-telephone"></i> +91 9359979571</span><br> -->
                 <div>
                     <a href="https://github.com/VaibhavPachpute21" target="_blank"><i class="bi bi-github "
                             style="color:  #000000;" aria-label="GitHub"></i></a>
@@ -148,24 +148,26 @@
             </div>
             <div class="col-md-6 oder-1">
                 <p>If you want to get in touch with me just drop a message!</p>
-                <form name="form" method="post">
+                <form name="form">
                     <div class="row">
                         <div class="mb-3 col-md-6">
-                            <input type="text" class="form-control name" id="name" placeholder="Your Name">
+                            <input type="text" #name class="form-control name" id="name" placeholder="Your Name" required >
                         </div>
                         <div class="mb-3 col-md-6">
-                            <input type="email" class="form-control email" id="email" placeholder="Your Email">
+                            <input type="email" #email class="form-control email" id="email" placeholder="Your Email" required>
                         </div>
                     </div>
                     <div class="mb-3">
-                        <input type="text" class="form-control" id="subject" placeholder="Subject">
+                        <input type="text" #subject class="form-control" id="subject" placeholder="Subject" required>
                     </div>
                     <div class="mb-3">
-                        <textarea type="text" class="form-control msg" id="message" rows="5"
-                            placeholder="Message here..."></textarea>
+                        <textarea type="text" #message class="form-control msg" id="message" rows="5"
+                            placeholder="Message here..." required></textarea>
                     </div>
-                    <button type="submit" id="sbtbtn" class="btn btn-outline-primary" onClick="">Submit</button>
+                    <button id="sbtbtn" type="submit" class="btn btn-outline-primary"
+                    (click)="sendMail(name.value,email.value,subject.value,message.value)">Submit</button>
                 </form>
+                
             </div>
         </div>
     </div>
