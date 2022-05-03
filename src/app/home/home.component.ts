@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { isEmpty } from 'rxjs';
 import '../../../src/assets/smtp.js';
 declare let Email: any;
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -10,6 +11,7 @@ declare let Email: any;
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+
   services = [
     {
       title: "Website Development",
@@ -78,7 +80,7 @@ export class HomeComponent implements OnInit {
       description: "velopment can range from developing a simple single static page of plain text to complex web applications."
     }
   ]
-
+  sentMSG!:String;
   isEmptyOrSpaces(str: any) {
     return str === null || str.match(/^ *$/) !== null;
   }
@@ -90,14 +92,14 @@ export class HomeComponent implements OnInit {
     } else {
       Email.send({
         Host: "smtp.gmail.com",
-        Username: " ",
+        Username: "",
         Password: "",
         To: 'vpachpute22@gmail.com',
         From: email,
         Subject: subject,
         Body: "Name:" + name + "<br/>" + "Subject:" + subject + "<br/>" + msg
       }).then(
-        alert("Message Sent successfully!")
+        this.router.navigate(['/thankyou!'])
       );
 
     }
@@ -106,9 +108,7 @@ export class HomeComponent implements OnInit {
 
   }
 
-  constructor() {
-
-  }
+  constructor(private router:Router) {  }
 
   ngOnInit() {
 
